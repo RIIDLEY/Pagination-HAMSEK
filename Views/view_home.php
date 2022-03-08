@@ -27,8 +27,6 @@ if ($_GET['page']<$nbdata/10) {//mise en place du bouton suivant
     echo "<a href='?controller=home&action=changePage&page=".($_GET['page']+1)."' class='btn btn-danger'>Suivant</a> ";
 }
 
-//-----------------
-
 //Systeme de pagination dynamique, la liste des boutons s'actualise en fonction de la page où l'utilisateur est
 echo '<br><br>Systeme de pagination dynamique :<br>';
 
