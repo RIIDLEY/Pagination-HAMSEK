@@ -1,5 +1,5 @@
 <?php
-$dsn = "mysql:dbname=pagination;host=localhost";
-$login = "pagination";
-$mdp = "MYY88GWj53(Ia*s-";
+$dsn = "mysql:dbname=pagination_hamsek;host=localhost";
+$login = "pagination_hamsek";
+$mdp = "E16CyZ91swB5nOZL";
 ?>

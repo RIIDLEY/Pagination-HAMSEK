@@ -17,28 +17,21 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8mb4 */;
 
---
--- Base de données : `pagination`
---
 
--- --------------------------------------------------------
-
---
--- Structure de la table `mytable`
---
-
-DROP TABLE IF EXISTS `mytable`;
-CREATE TABLE IF NOT EXISTS `mytable` (
+CREATE DATABASE IF NOT EXISTS `pagination_hamsek`;
+USE `pagination_hamsek`;
+DROP TABLE IF EXISTS `pagination_name_HAMSEK`;
+CREATE TABLE IF NOT EXISTS `pagination_name_HAMSEK` (
   `id` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT,
   `name` varchar(255) COLLATE utf8_bin DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=103 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
--- Déchargement des données de la table `mytable`
+-- Déchargement des données de la table `PaginationName-HAMSEK`
 --
 
-INSERT INTO `mytable` (`id`, `name`) VALUES
+INSERT INTO `pagination_name_HAMSEK` (`id`, `name`) VALUES
 (1, 'Jillian Mueller'),
 (2, 'Odessa Mccullough'),
 (3, 'Ila Erickson'),

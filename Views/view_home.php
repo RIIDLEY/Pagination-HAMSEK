@@ -81,6 +81,7 @@ if ($_GET['page']<$nbdata/10) {//mise en place du bouton suivant
 </select>
 
 </center>
+<p>Par Lahoucine HAMSEK</p>
 <?php
 require('view_end.php');
 ?>

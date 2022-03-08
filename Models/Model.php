@@ -49,7 +49,7 @@ class Model
     {
 
         try {
-            $req = $this->bd->prepare('SELECT COUNT(*) FROM mytable');
+            $req = $this->bd->prepare('SELECT COUNT(*) FROM pagination_name_HAMSEK');
             $req->execute();
             $tab = $req->fetch(PDO::FETCH_NUM);
             return $tab[0];
@@ -62,7 +62,7 @@ class Model
     {
         $debut = ($numeropage-1)*10;
         try {
-            $req = $this->bd->prepare('SELECT * FROM mytable LIMIT :debut,10');
+            $req = $this->bd->prepare('SELECT * FROM pagination_name_HAMSEK LIMIT :debut,10');
             $req->bindValue(':debut', $debut, PDO::PARAM_INT);
             $req->execute();
             return $req->fetchall();
