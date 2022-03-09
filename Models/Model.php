@@ -45,7 +45,7 @@ class Model
         return self::$instance;
     }
 
-    public function getNbData()//recupere le nombre de données present sur lA DB
+    public function getNbData()//recupere le nombre de données present sur la DB
     {
 
         try {
